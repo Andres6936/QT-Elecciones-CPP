@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>Data/Encabezado.jpg</file>
+        <file>Data/Claire.jpg</file>
+        <file>Data/Francis.jpg</file>
+        <file>Data/Obama.jpg</file>
     </qresource>
 </RCC>
