@@ -10,11 +10,11 @@ private:
 
     // Fields
 
-    Candidate candidate1;
+    Candidate candidate1 = Candidate("Frank", "Underwood", "Independiente", 27);
 
-    Candidate candidate2;
+    Candidate candidate2 = Candidate("Claire", "Underwood", "Revolucionario", 26);
 
-    Candidate candidate3;
+    Candidate candidate3 = Candidate("Barack", "Obama", "Tradicional", 26);
 
 public:
 
