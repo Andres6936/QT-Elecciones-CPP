@@ -40,3 +40,36 @@ unsigned int Candidate::getVotos() const
 {
     return votos;
 }
+
+void Candidate::ingresarUnVoto()
+{
+    votos += 1;
+}
+
+void Candidate::agregarVotoTelevision()
+{
+    costoCampanha += 1000;
+    ingresarUnVoto();
+}
+
+void Candidate::agregarVotoRadio()
+{
+    costoCampanha += 500;
+    ingresarUnVoto();
+}
+
+void Candidate::agregarVotoInternet()
+{
+    costoCampanha += 100;
+    ingresarUnVoto();
+}
+
+void Candidate::reiniciarConteoVotos()
+{
+    votos = 0;
+}
+
+void Candidate::reiniciarCostoCampanha()
+{
+    costoCampanha = 0.0;
+}

@@ -42,6 +42,20 @@ public:
     double getCostoCampanha() const;
 
     unsigned int getVotos() const;
+
+    // Methods
+
+    void ingresarUnVoto();
+
+    void agregarVotoTelevision();
+
+    void agregarVotoRadio();
+
+    void agregarVotoInternet();
+
+    void reiniciarConteoVotos();
+
+    void reiniciarCostoCampanha();
 };
 
 #endif // CANDIDATE_H
