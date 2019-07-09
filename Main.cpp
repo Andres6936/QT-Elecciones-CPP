@@ -1,10 +1,10 @@
-#include "MainWindow.h"
+#include "InterfaceElections.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    MainWindow w;
+    InterfaceElections w;
     w.show();
 
     return app.exec();

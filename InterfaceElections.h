@@ -7,15 +7,18 @@ namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
+class InterfaceElections : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+
+    explicit InterfaceElections(QWidget *parent = nullptr);
+
+    ~InterfaceElections();
 
 private:
+
     Ui::MainWindow *ui;
 };
 
