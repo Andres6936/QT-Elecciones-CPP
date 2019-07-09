@@ -149,58 +149,58 @@ background-color: white;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_4">
+              <widget class="QLabel" name="labelName1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Nombre: Frank</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_5">
+              <widget class="QLabel" name="labelApellido1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Apellido: Underwood</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_6">
+              <widget class="QLabel" name="labelEdad1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Edad: 27</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_7">
+              <widget class="QLabel" name="labelPartidoPolitico1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Partido Político: Independiente</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_8">
+              <widget class="QLabel" name="labelCostoCampanha1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Costo de Campaña: $ 0, 00</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_9">
+              <widget class="QLabel" name="labelNumeroVotos1">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Número de Votos: 0</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="buttonPorcentajeVotos1">
                <property name="text">
-                <string>PushButton</string>
+                <string>Porcentaje Votos</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="labelVotar1">
                <property name="text">
-                <string>PushButton</string>
+                <string>Votar</string>
                </property>
               </widget>
              </item>
@@ -241,42 +241,42 @@ background-color: white;</string>
              <item>
               <widget class="QLabel" name="label_11">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Nombre: Claire</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_13">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Apellido: Underwood</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_15">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Edad: 26</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_14">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Partido Político: Revolucionario</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_12">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Costo de Campaña: $ 0, 00</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_10">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Número de Votos: 0</string>
                </property>
               </widget>
              </item>
@@ -331,42 +331,42 @@ background-color: white;</string>
              <item>
               <widget class="QLabel" name="label_17">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Nombre: Barack</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_19">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Apellido: Obama</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_21">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Edad: 27</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_20">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Partido Político: Tradicional</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_18">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Costo de Campaña: $ 0, 00</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_16">
                <property name="text">
-                <string>TextLabel</string>
+                <string>Número de Votos: 0</string>
                </property>
               </widget>
              </item>
