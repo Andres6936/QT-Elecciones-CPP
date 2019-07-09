@@ -25,11 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        Candidate.cpp \
         InterfaceElections.cpp \
-        Main.cpp
+        Main.cpp \
+        Urn.cpp
 
 HEADERS += \
-    InterfaceElections.h
+    Candidate.h \
+    InterfaceElections.h \
+    Urn.h
 
 FORMS += \
         MainWindow.ui
