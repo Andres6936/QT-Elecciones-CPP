@@ -24,7 +24,11 @@ public:
 
     // Methods
 
+    Candidate getCandidate1() const;
 
+    Candidate getCandidate2() const;
+
+    Candidate getCandidate3() const;
 };
 
 #endif // URN_H
