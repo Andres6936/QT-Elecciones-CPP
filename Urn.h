@@ -22,13 +22,33 @@ public:
 
     Urn();
 
-    // Methods
+    // Getter Methods
 
     Candidate getCandidate1() const;
 
     Candidate getCandidate2() const;
 
     Candidate getCandidate3() const;
+
+    // Methods
+
+    void ingresarVotoTelevision(Candidate candidate);
+
+    void ingresarVotoRadio(Candidate candidate);
+
+    void ingresarVotoInernet(Candidate candidate);
+
+    unsigned int calcularTotalVotos();
+
+    double calcularCostoPromedioCampanha();
+
+    double calcularPorcentajeVotos(Candidate candidate);
+
+    void vaciarUrna();
+
+    QString method1();
+
+    QString method2();
 };
 
 #endif // URN_H
