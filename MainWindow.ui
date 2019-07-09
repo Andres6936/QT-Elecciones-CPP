@@ -239,58 +239,58 @@ background-color: white;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_11">
+              <widget class="QLabel" name="labelNombre2">
                <property name="text">
                 <string>Nombre: Claire</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_13">
+              <widget class="QLabel" name="labelApellido2">
                <property name="text">
                 <string>Apellido: Underwood</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_15">
+              <widget class="QLabel" name="labelEdad2">
                <property name="text">
                 <string>Edad: 26</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_14">
+              <widget class="QLabel" name="labelPartidoPolitico2">
                <property name="text">
                 <string>Partido Político: Revolucionario</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_12">
+              <widget class="QLabel" name="labelCostoCampanha2">
                <property name="text">
                 <string>Costo de Campaña: $ 0, 00</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_10">
+              <widget class="QLabel" name="labelNumeroVotos2">
                <property name="text">
                 <string>Número de Votos: 0</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_4">
+              <widget class="QPushButton" name="buttonPorcentjaeVotos2">
                <property name="text">
-                <string>PushButton</string>
+                <string>Porcentaje Votos</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_3">
+              <widget class="QPushButton" name="buttonVotar2">
                <property name="text">
-                <string>PushButton</string>
+                <string>Votar</string>
                </property>
               </widget>
              </item>
@@ -373,14 +373,14 @@ background-color: white;</string>
              <item>
               <widget class="QPushButton" name="pushButton_6">
                <property name="text">
-                <string>PushButton</string>
+                <string>Porcentaje Votos</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="pushButton_5">
                <property name="text">
-                <string>PushButton</string>
+                <string>Votar</string>
                </property>
               </widget>
              </item>
