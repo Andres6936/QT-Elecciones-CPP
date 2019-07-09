@@ -28,11 +28,19 @@ SOURCES += \
         Candidate.cpp \
         InterfaceElections.cpp \
         Main.cpp \
+        PanelCandidate.cpp \
+        PanelExtension.cpp \
+        PanelImage.cpp \
+        PanelUrn.cpp \
         Urn.cpp
 
 HEADERS += \
     Candidate.h \
     InterfaceElections.h \
+    PanelCandidate.hpp \
+    PanelExtension.hpp \
+    PanelImage.hpp \
+    PanelUrn.hpp \
     Urn.h
 
 FORMS += \

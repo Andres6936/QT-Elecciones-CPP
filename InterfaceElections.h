@@ -2,24 +2,36 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
-namespace Ui {
-class MainWindow;
-}
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class InterfaceElections : public QMainWindow
 {
     Q_OBJECT
+
+private:
+
+    QWidget *centralWidget;
+    QVBoxLayout *verticalLayout;
+
+    QFrame *frame;
+    QVBoxLayout *verticalLayout_2;
 
 public:
 
     explicit InterfaceElections(QWidget *parent = nullptr);
 
     ~InterfaceElections();
-
-private:
-
-    Ui::MainWindow *ui;
 };
 
 #endif // MAINWINDOW_H
