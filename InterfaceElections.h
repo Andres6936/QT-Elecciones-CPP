@@ -15,6 +15,8 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
+#include "PanelImage.hpp"
+
 class InterfaceElections : public QMainWindow
 {
     Q_OBJECT
@@ -26,6 +28,8 @@ private:
 
     QFrame *frame;
     QVBoxLayout *verticalLayout_2;
+
+    PanelImage *panelImage;
 
 public:
 

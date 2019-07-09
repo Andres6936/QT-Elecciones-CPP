@@ -39,6 +39,17 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 
     // -----
 
+    panelImage = new PanelImage(frame);
+
+    verticalLayout_2->addWidget(panelImage);
+
+    // -----
+
+    verticalLayout->addWidget(frame);
+
+    // ------
+
+    this->setCentralWidget(centralWidget);
 }
 
 InterfaceElections::~InterfaceElections()
