@@ -5,17 +5,24 @@ Urn::Urn()
 
 }
 
-Candidate Urn::getCandidate1() const
+Urn::~Urn()
+{
+    delete candidate1;
+    delete candidate2;
+    delete candidate3;
+}
+
+Candidate *Urn::getCandidate1() const
 {
     return candidate1;
 }
 
-Candidate Urn::getCandidate2() const
+Candidate *Urn::getCandidate2() const
 {
     return candidate2;
 }
 
-Candidate Urn::getCandidate3() const
+Candidate *Urn::getCandidate3() const
 {
     return candidate3;
 }
@@ -37,13 +44,13 @@ void Urn::ingresarVotoInernet(Candidate candidate)
 
 unsigned int Urn::calcularTotalVotos()
 {
-    return candidate1.getVotos() + candidate2.getVotos() + candidate3.getVotos();
+    return candidate1->getVotos() + candidate2->getVotos() + candidate3->getVotos();
 }
 
 double Urn::calcularCostoPromedioCampanha()
 {
-    double total = candidate1.getCostoCampanha() +
-            candidate2.getCostoCampanha() + candidate3.getCostoCampanha();
+    double total = candidate1->getCostoCampanha() +
+            candidate2->getCostoCampanha() + candidate3->getCostoCampanha();
 
     return total / 3;
 }
@@ -58,14 +65,14 @@ double Urn::calcularPorcentajeVotos(Candidate candidate)
 
 void Urn::vaciarUrna()
 {
-    candidate1.reiniciarConteoVotos();
-    candidate1.reiniciarCostoCampanha();
+    candidate1->reiniciarConteoVotos();
+    candidate1->reiniciarCostoCampanha();
 
-    candidate2.reiniciarConteoVotos();
-    candidate2.reiniciarCostoCampanha();
+    candidate2->reiniciarConteoVotos();
+    candidate2->reiniciarCostoCampanha();
 
-    candidate3.reiniciarConteoVotos();
-    candidate3.reiniciarCostoCampanha();
+    candidate3->reiniciarConteoVotos();
+    candidate3->reiniciarCostoCampanha();
 }
 
 QString Urn::method1()

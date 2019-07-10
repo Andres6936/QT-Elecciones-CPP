@@ -15,13 +15,17 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
+#include "Urn.h"
 #include "PanelImage.hpp"
+#include "PanelCandidate.hpp"
 
 class InterfaceElections : public QMainWindow
 {
     Q_OBJECT
 
 private:
+
+    Urn *urn;
 
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
@@ -30,6 +34,10 @@ private:
     QVBoxLayout *verticalLayout_2;
 
     PanelImage *panelImage;
+
+    PanelCandidate *panelFrank;
+    PanelCandidate *panelClaire;
+    PanelCandidate *panelBarack;
 
 public:
 

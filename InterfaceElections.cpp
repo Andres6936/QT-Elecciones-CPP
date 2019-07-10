@@ -5,7 +5,7 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 {
     if (this->objectName().isEmpty())
     {
-        this->setObjectName(QStringLiteral("MainWindow"));
+        this->setObjectName(QStringLiteral("InterfaceElections"));
     }
 
     this->resize(800, 600);
@@ -16,25 +16,25 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 
     // ------
 
+    urn = new Urn();
+
+    // ------
+
     centralWidget = new QWidget(parent);
     centralWidget->setObjectName(QStringLiteral("centralWidget"));
 
     verticalLayout = new QVBoxLayout(centralWidget);
     verticalLayout->setSpacing(6);
     verticalLayout->setContentsMargins(11, 11, 11, 11);
-    verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
 
     // ------
 
     frame = new QFrame(centralWidget);
-    frame->setObjectName(QStringLiteral("frame"));
     frame->setFrameShape(QFrame::StyledPanel);
     frame->setFrameShadow(QFrame::Raised);
 
     verticalLayout_2 = new QVBoxLayout(frame);
     verticalLayout_2->setSpacing(6);
-    verticalLayout_2->setContentsMargins(11, 11, 11, 11);
-    verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
     verticalLayout_2->setContentsMargins(0, 0, 0, 0);
 
     // -----
@@ -42,6 +42,26 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
     panelImage = new PanelImage(frame);
 
     verticalLayout_2->addWidget(panelImage);
+
+    // -----
+
+    QFrame *panelCandidate = new QFrame(frame);
+    panelCandidate->setFrameShape(QFrame::StyledPanel);
+    panelCandidate->setFrameShadow(QFrame::Raised);
+
+    QHBoxLayout *layoutCandidate = new QHBoxLayout(panelCandidate);
+    layoutCandidate->setSpacing(6);
+    layoutCandidate->setContentsMargins(11, 11, 11, 11);
+
+    panelFrank = new PanelCandidate(panelCandidate, urn->getCandidate1());
+    panelClaire = new PanelCandidate(panelCandidate, urn->getCandidate2());
+    panelBarack = new PanelCandidate(panelCandidate, urn->getCandidate3());
+
+    layoutCandidate->addWidget(panelFrank);
+    layoutCandidate->addWidget(panelClaire);
+    layoutCandidate->addWidget(panelBarack);
+
+    verticalLayout_2->addWidget(panelCandidate);
 
     // -----
 
