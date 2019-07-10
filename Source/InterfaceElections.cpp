@@ -1,5 +1,4 @@
-#include "InterfaceElections.h"
-#include "ui_MainWindow.h"
+#include "Include/InterfaceElections.h"
 
 InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 {

@@ -1,4 +1,4 @@
-#include "InterfaceElections.h"
+#include "Include/InterfaceElections.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

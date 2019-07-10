@@ -1,4 +1,4 @@
-#include "Candidate.h"
+#include "Include/Candidate.h"
 
 Candidate::Candidate(QString path, QString nName, QString nApellido,
                      QString nPArtidoPolitico, unsigned int nEdad)

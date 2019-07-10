@@ -1,4 +1,4 @@
-#include "PanelCandidate.hpp"
+#include "Include/PanelCandidate.hpp"
 
 PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(parent)
 {

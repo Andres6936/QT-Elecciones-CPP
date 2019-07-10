@@ -1,4 +1,4 @@
-#include "PanelExtension.hpp"
+#include "Include/PanelExtension.hpp"
 
 PanelExtension::PanelExtension(QWidget *parent) : QFrame(parent)
 {

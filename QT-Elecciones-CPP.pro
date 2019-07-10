@@ -25,23 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        Candidate.cpp \
-        InterfaceElections.cpp \
-        Main.cpp \
-        PanelCandidate.cpp \
-        PanelExtension.cpp \
-        PanelImage.cpp \
-        PanelUrn.cpp \
-        Urn.cpp
+        Source/Candidate.cpp \
+        Source/InterfaceElections.cpp \
+        Source/Main.cpp \
+        Source/PanelCandidate.cpp \
+        Source/PanelExtension.cpp \
+        Source/PanelImage.cpp \
+        Source/PanelUrn.cpp \
+        Source/Urn.cpp
 
 HEADERS += \
-    Candidate.h \
-    InterfaceElections.h \
-    PanelCandidate.hpp \
-    PanelExtension.hpp \
-    PanelImage.hpp \
-    PanelUrn.hpp \
-    Urn.h
+    Include/Candidate.h \
+    Include/InterfaceElections.h \
+    Include/PanelCandidate.hpp \
+    Include/PanelExtension.hpp \
+    Include/PanelImage.hpp \
+    Include/PanelUrn.hpp \
+    Include/Urn.h
 
 FORMS += \
         MainWindow.ui

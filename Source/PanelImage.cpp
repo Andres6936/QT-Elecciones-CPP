@@ -1,4 +1,4 @@
-#include "PanelImage.hpp"
+#include "Include/PanelImage.hpp"
 
 PanelImage::PanelImage(QWidget *parent) : QFrame (parent)
 {
