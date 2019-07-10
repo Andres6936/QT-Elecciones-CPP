@@ -15,28 +15,28 @@ PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(
     labelImage->setStyleSheet(QString("image: url(:/Data/" + candidate->getPathToImage() + ");"));
 
     labelNombre = new QLabel(this);
-    labelNombre->setText(candidate->getName());
+    labelNombre->setText("Name: " + candidate->getName());
 
     labelApellido = new QLabel(this);
-    labelApellido->setText(candidate->getApellido());
+    labelApellido->setText("Last Name: " + candidate->getApellido());
 
     labelEdad = new QLabel(this);
-    labelEdad->setText(QString::number(candidate->getEdad()));
+    labelEdad->setText("Age: " + QString::number(candidate->getEdad()));
 
     labelPartidoPolitico = new QLabel(this);
-    labelPartidoPolitico->setText(candidate->getPartidoPolitico());
+    labelPartidoPolitico->setText("Political Party: " + candidate->getPartidoPolitico());
 
     labelCostoCampanha = new QLabel(this);
-    labelCostoCampanha->setText(QString::number(candidate->getCostoCampanha()));
+    labelCostoCampanha->setText("Cost Campaign: " + QString::number(candidate->getCostoCampanha()));
 
     labelNumeroVotos = new QLabel(this);
-    labelNumeroVotos->setText(QString::number(candidate->getVotos()));
+    labelNumeroVotos->setText("Votes: " + QString::number(candidate->getVotos()));
 
     buttonPorcentajeVotos = new QPushButton(this);
-    buttonPorcentajeVotos->setText("Porcentaje de Votos");
+    buttonPorcentajeVotos->setText("Percentage Votes");
 
     buttonVotar = new QPushButton(this);
-    buttonVotar->setText("Votar");
+    buttonVotar->setText("Vote");
 
     layout->addWidget(labelImage);
     layout->addWidget(labelNombre);
