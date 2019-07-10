@@ -1,14 +1,20 @@
 #include "Candidate.h"
 
-Candidate::Candidate(QString nName, QString nApellido,
+Candidate::Candidate(QString path, QString nName, QString nApellido,
                      QString nPArtidoPolitico, unsigned int nEdad)
 {
+    pathToImage = path;
     name = nName;
     apellido = nApellido;
     partidoPolitico = nPArtidoPolitico;
     edad = nEdad;
     costoCampanha = 0.0;
     votos = 0;
+}
+
+QString Candidate::getPathToImage() const
+{
+    return pathToImage;
 }
 
 QString Candidate::getName() const

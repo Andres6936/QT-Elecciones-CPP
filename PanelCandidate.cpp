@@ -12,7 +12,7 @@ PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(
     layout->setContentsMargins(0, 0, 0, 0);
 
     labelImage = new QLabel(this);
-    labelImage->setStyleSheet(QStringLiteral("image: url(:/Data/Francis.jpg);"));
+    labelImage->setStyleSheet(QString("image: url(:/Data/" + candidate->getPathToImage() + ");"));
 
     labelNombre = new QLabel(this);
     labelNombre->setText(candidate->getName());

@@ -10,6 +10,8 @@ private:
 
     // Fields
 
+    QString pathToImage;
+
     QString name;
 
     QString apellido;
@@ -26,10 +28,12 @@ public:
 
     // Constructs
 
-    Candidate(QString nName, QString nApellido,
+    Candidate(QString path, QString nName, QString nApellido,
               QString nPArtidoPolitico, unsigned int nEdad);
 
     // Getter Methods
+
+    QString getPathToImage() const;
 
     QString getName() const;
 

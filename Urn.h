@@ -10,11 +10,11 @@ private:
 
     // Fields
 
-    Candidate *candidate1 = new Candidate("Frank", "Underwood", "Independiente", 27);
+    Candidate *candidate1 = new Candidate("Francis.jpg", "Frank", "Underwood", "Independiente", 27);
 
-    Candidate *candidate2 = new Candidate("Claire", "Underwood", "Revolucionario", 26);
+    Candidate *candidate2 = new Candidate("Claire.jpg", "Claire", "Underwood", "Revolucionario", 26);
 
-    Candidate *candidate3 = new Candidate("Barack", "Obama", "Tradicional", 26);
+    Candidate *candidate3 = new Candidate("Obama.jpg", "Barack", "Obama", "Tradicional", 26);
 
 public:
 
