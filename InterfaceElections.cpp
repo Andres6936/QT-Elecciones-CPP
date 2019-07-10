@@ -65,6 +65,25 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 
     // -----
 
+    panelUrn = new PanelUrn(frame);
+
+    verticalLayout_2->addWidget(panelUrn);
+
+    // -----
+
+    panelExtension = new PanelExtension(frame);
+
+    verticalLayout_2->addWidget(panelExtension);
+
+    // -----
+    
+    verticalLayout_2->setStretch(0, 2);
+    verticalLayout_2->setStretch(1, 6);
+    verticalLayout_2->setStretch(2, 1);
+    verticalLayout_2->setStretch(3, 1);
+
+    // -----
+
     verticalLayout->addWidget(frame);
 
     // ------

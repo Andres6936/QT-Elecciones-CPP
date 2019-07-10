@@ -16,8 +16,10 @@
 #include <QtWidgets/QWidget>
 
 #include "Urn.h"
+#include "PanelUrn.hpp"
 #include "PanelImage.hpp"
 #include "PanelCandidate.hpp"
+#include "PanelExtension.hpp"
 
 class InterfaceElections : public QMainWindow
 {
@@ -38,6 +40,10 @@ private:
     PanelCandidate *panelFrank;
     PanelCandidate *panelClaire;
     PanelCandidate *panelBarack;
+
+    PanelUrn *panelUrn;
+
+    PanelExtension *panelExtension;
 
 public:
 
