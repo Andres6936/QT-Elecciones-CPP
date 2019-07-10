@@ -45,8 +45,10 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
     // -----
 
     QFrame *panelCandidate = new QFrame(frame);
+    panelCandidate->setStyleSheet(QStringLiteral("QFrame { border: none; }"));
     panelCandidate->setFrameShape(QFrame::StyledPanel);
     panelCandidate->setFrameShadow(QFrame::Raised);
+    panelCandidate->setLineWidth(0);
 
     QHBoxLayout *layoutCandidate = new QHBoxLayout(panelCandidate);
     layoutCandidate->setSpacing(6);

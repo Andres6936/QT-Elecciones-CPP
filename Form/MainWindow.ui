@@ -108,7 +108,7 @@ background-color: white;</string>
        <item>
         <widget class="QFrame" name="panelCandidate">
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QFrame { border: none; }</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -116,9 +116,16 @@ background-color: white;</string>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QFrame" name="panelCandidate1">
+            <property name="styleSheet">
+             <string notr="true">QLabel { border : none; margin: 1px 3px; }
+QLabel#labelImage1 {border: 1px solid rgb( 240, 240, 240 ); }</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -126,6 +133,9 @@ background-color: white;</string>
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,0,0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>2</number>
+             </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
@@ -185,8 +195,14 @@ background-color: white;</string>
              </item>
              <item>
               <widget class="QLabel" name="labelNumeroVotos1">
+               <property name="styleSheet">
+                <string notr="true">color : rgb( 246, 34, 23 );</string>
+               </property>
                <property name="text">
                 <string>Número de Votos: 0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -209,6 +225,10 @@ background-color: white;</string>
           </item>
           <item>
            <widget class="QFrame" name="panelCandidate2">
+            <property name="styleSheet">
+             <string notr="true">QLabel { border : none; margin: 1px 3px; }
+QLabel#labelImage2 {border: 1px solid rgb( 240, 240, 240 ); }</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -216,6 +236,9 @@ background-color: white;</string>
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,0,0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>2</number>
+             </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
@@ -275,8 +298,14 @@ background-color: white;</string>
              </item>
              <item>
               <widget class="QLabel" name="labelNumeroVotos2">
+               <property name="styleSheet">
+                <string notr="true">color : rgb( 246, 34, 23 );</string>
+               </property>
                <property name="text">
                 <string>Número de Votos: 0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -299,6 +328,10 @@ background-color: white;</string>
           </item>
           <item>
            <widget class="QFrame" name="panelCandidate3">
+            <property name="styleSheet">
+             <string notr="true">QLabel { border : none; margin: 1px 3px; }
+QLabel#labelImage3 {border: 1px solid rgb( 240, 240, 240 ); }</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -306,6 +339,9 @@ background-color: white;</string>
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,0,0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>2</number>
+             </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
@@ -365,8 +401,14 @@ background-color: white;</string>
              </item>
              <item>
               <widget class="QLabel" name="labelNumeroVotos3">
+               <property name="styleSheet">
+                <string notr="true">color: rgb( 246, 34, 23 );</string>
+               </property>
                <property name="text">
                 <string>Número de Votos: 0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -433,6 +475,9 @@ background-color: white;</string>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QPushButton" name="buttonVaciarUrna">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-radius: 5px;
 background-color: rgb( 246, 34, 23 );
@@ -445,6 +490,9 @@ color: white;</string>
           </item>
           <item>
            <widget class="QPushButton" name="buttonOpcion1">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-radius: 5px;
 background-color: rgb( 21, 137, 255 );
@@ -457,6 +505,9 @@ color: white;</string>
           </item>
           <item>
            <widget class="QPushButton" name="buttonOpcion2">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-radius: 5px;
 background-color: rgb( 21, 137, 255 );
