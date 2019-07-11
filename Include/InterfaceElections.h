@@ -1,19 +1,12 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef INTERFACE_ELECTIONS_H
+#define INTERFACE_ELECTIONS_H
 
-#include <QMainWindow>
-#include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QFrame>
-#include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QPushButton>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <QtWidgets/QInputDialog>
 
 #include "Urn.h"
 #include "PanelUrn.hpp"
@@ -49,7 +42,21 @@ public:
 
     explicit InterfaceElections(QWidget *parent = nullptr);
 
-    ~InterfaceElections();
+    virtual ~InterfaceElections();
+
+    void updateInterface();
+
+    void addVoteToCandidate(Candidate *candidate);
+
+    void clearUrn();
+
+    void showDialogPercentageVotes(Candidate *candidate);
+
+    unsigned int getTotalVotesUrn();
+
+    void reqFuncOption1();
+
+    void reqFuncOption2();
 };
 
-#endif // MAINWINDOW_H
+#endif // INTERFACE_ELECTIONS_H

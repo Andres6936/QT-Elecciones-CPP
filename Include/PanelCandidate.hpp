@@ -1,15 +1,17 @@
 #ifndef PANELCANDIDATE_HPP
 #define PANELCANDIDATE_HPP
 
-#include <QFrame>
-#include <QLabel>
-#include <QPushButton>
-#include <QVBoxLayout>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 
 #include "Candidate.h"
 
 class PanelCandidate : public QFrame
 {
+
+    Q_OBJECT
 
 private:
 
@@ -37,7 +39,13 @@ private:
 
 public:
 
-    PanelCandidate(QWidget *parent, Candidate *nCandidate);
+    PanelCandidate(QWidget *nParent, Candidate *nCandidate);
+
+    virtual ~PanelCandidate();
+
+private slots:
+
+    void handleButtonPressed();
 };
 
 #endif // PANELCANDIDATE_HPP

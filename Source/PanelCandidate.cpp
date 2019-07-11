@@ -1,13 +1,13 @@
-#include "Include/PanelCandidate.hpp"
+﻿#include "Include/PanelCandidate.hpp"
+#include "Include/InterfaceElections.h"
 
-PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(parent)
+PanelCandidate::PanelCandidate(QWidget *nParent, Candidate *nCandidate) : QFrame(nParent)
 {
     this->setFrameShape(QFrame::StyledPanel);
     this->setFrameShadow(QFrame::Raised);
     this->setStyleSheet(QLatin1String("QLabel { border : none; margin: 1px 3px; }\n"
                                       "QLabel#labelImage"
                                       "{border: 1px solid rgb( 240, 240, 240 ); }"));
-
     candidate = nCandidate;
 
     layout = new QVBoxLayout(this);
@@ -42,9 +42,15 @@ PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(
     buttonPorcentajeVotos->setText("Percentage Votes");
     buttonPorcentajeVotos->setCursor(QCursor(Qt::PointingHandCursor));
 
+    // Connect button signal to appropriate slot
+    connect(buttonPorcentajeVotos, SIGNAL(pressed()), this, SLOT(handleButtonPressed()));
+
     buttonVotar = new QPushButton(this);
     buttonVotar->setText("Vote");
     buttonVotar->setCursor(QCursor(Qt::PointingHandCursor));
+
+    // Connect button signal to appropriate slot
+    connect(buttonVotar, SIGNAL(pressed()), this, SLOT(handleButtonPressed()));
 
     layout->addWidget(labelImage);
     layout->addWidget(labelNombre);
@@ -58,4 +64,21 @@ PanelCandidate::PanelCandidate(QWidget *parent, Candidate *nCandidate) : QFrame(
 
     // Index: 0 -> labelImage
     layout->setStretch(0, 1);
+}
+
+PanelCandidate::~PanelCandidate()
+{
+
+}
+
+void PanelCandidate::handleButtonPressed()
+{
+    // What is the button pressed?
+    // Get pointer to the button pressed
+    QPushButton *buttonPressed = qobject_cast<QPushButton*>(sender());
+
+    if(buttonPressed == buttonVotar)
+    {
+        dynamic_cast<InterfaceElections*>(this->parentWidget())->addVoteToCandidate(candidate);
+    }
 }

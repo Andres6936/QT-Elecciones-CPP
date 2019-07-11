@@ -10,11 +10,11 @@ private:
 
     // Fields
 
-    Candidate *candidate1 = new Candidate("Francis.jpg", "Frank", "Underwood", "Independiente", 27);
+    Candidate *candidate1;
 
-    Candidate *candidate2 = new Candidate("Claire.jpg", "Claire", "Underwood", "Revolucionario", 26);
+    Candidate *candidate2;
 
-    Candidate *candidate3 = new Candidate("Obama.jpg", "Barack", "Obama", "Tradicional", 26);
+    Candidate *candidate3;
 
 public:
 
@@ -36,17 +36,17 @@ public:
 
     // Methods
 
-    void ingresarVotoTelevision(Candidate candidate);
+    static void ingresarVotoTelevision(Candidate &candidate);
 
-    void ingresarVotoRadio(Candidate candidate);
+    static void ingresarVotoRadio(Candidate &candidate);
 
-    void ingresarVotoInernet(Candidate candidate);
+    static void ingresarVotoInernet(Candidate &candidate);
 
     unsigned int calcularTotalVotos();
 
     double calcularCostoPromedioCampanha();
 
-    double calcularPorcentajeVotos(Candidate candidate);
+    double calcularPorcentajeVotos(Candidate *candidate);
 
     void vaciarUrna();
 

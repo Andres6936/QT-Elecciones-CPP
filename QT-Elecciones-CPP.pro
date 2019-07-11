@@ -44,7 +44,7 @@ HEADERS += \
     Include/Urn.h
 
 FORMS += \
-        Form/MainWindow.ui
+    Form/MainWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

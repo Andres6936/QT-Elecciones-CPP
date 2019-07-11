@@ -96,3 +96,33 @@ InterfaceElections::~InterfaceElections()
 {
 
 }
+
+void InterfaceElections::addVoteToCandidate(Candidate *candidate)
+{
+    QStringList choices;
+
+    choices.append("Television"); choices.append("Radio"); choices.append("Internet");
+
+    bool userHasMadeAChoice = false;
+
+    QString choice = QInputDialog::getItem(this, "Influence",
+                                           "What media influenced you most"
+                                           " to vote for this candidate?", choices,
+                                           0, false, &userHasMadeAChoice);
+
+    if (userHasMadeAChoice && !choice.isEmpty())
+    {
+        if(choice == "Television")
+        {
+            urn->ingresarVotoTelevision(*candidate);
+        }
+        else if(choice == "Radio")
+        {
+            urn->ingresarVotoRadio(*candidate);
+        }
+        else if(choice == "Internet")
+        {
+            urn->ingresarVotoInernet(*candidate);
+        }
+    }
+}

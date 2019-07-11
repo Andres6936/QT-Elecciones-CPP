@@ -2,7 +2,9 @@
 
 Urn::Urn()
 {
-
+    candidate1 = new Candidate("Francis.jpg", "Frank", "Underwood", "Independiente", 43);
+    candidate2 = new Candidate("Claire.jpg", "Claire", "Underwood", "Revolucionario", 26);
+    candidate3 = new Candidate("Obama.jpg", "Barack", "Obama", "Tradicional", 35);
 }
 
 Urn::~Urn()
@@ -27,17 +29,17 @@ Candidate *Urn::getCandidate3() const
     return candidate3;
 }
 
-void Urn::ingresarVotoTelevision(Candidate candidate)
+void Urn::ingresarVotoTelevision(Candidate &candidate)
 {
     candidate.agregarVotoTelevision();
 }
 
-void Urn::ingresarVotoRadio(Candidate candidate)
+void Urn::ingresarVotoRadio(Candidate &candidate)
 {
     candidate.agregarVotoRadio();
 }
 
-void Urn::ingresarVotoInernet(Candidate candidate)
+void Urn::ingresarVotoInernet(Candidate &candidate)
 {
     candidate.agregarVotoInternet();
 }
@@ -55,9 +57,9 @@ double Urn::calcularCostoPromedioCampanha()
     return total / 3;
 }
 
-double Urn::calcularPorcentajeVotos(Candidate candidate)
+double Urn::calcularPorcentajeVotos(Candidate *candidate)
 {
-    double numeroVotosCandidato = candidate.getVotos();
+    double numeroVotosCandidato = candidate->getVotos();
     double votosTotales = calcularTotalVotos();
 
     return numeroVotosCandidato / votosTotales * 100;
