@@ -20,29 +20,36 @@ class InterfaceElections : public QMainWindow
 
 private:
 
-    Urn *urn;
+    // Fields Private
 
-    QWidget *centralWidget;
-    QVBoxLayout *verticalLayout;
+    Urn *urn = nullptr;
 
-    QFrame *frame;
-    QVBoxLayout *verticalLayout_2;
+    QWidget *centralWidget = nullptr;
+    QVBoxLayout *verticalLayout = nullptr;
 
-    PanelImage *panelImage;
-
-    PanelCandidate *panelFrank;
-    PanelCandidate *panelClaire;
-    PanelCandidate *panelBarack;
-
-    PanelUrn *panelUrn;
-
-    PanelExtension *panelExtension;
+    QFrame *frame = nullptr;
+    QVBoxLayout *verticalLayout_2 = nullptr;
 
 public:
 
+    // Fields Public
+
+    QFrame *panelCandidate = nullptr;
+    QHBoxLayout *layoutCandidate = nullptr;
+
+    PanelImage *panelImage = nullptr;
+
+    PanelCandidate *panelFrank = nullptr;
+    PanelCandidate *panelClaire = nullptr;
+    PanelCandidate *panelBarack = nullptr;
+
+    PanelUrn *panelUrn = nullptr;
+
+    PanelExtension *panelExtension = nullptr;
+
     explicit InterfaceElections(QWidget *parent = nullptr);
 
-    virtual ~InterfaceElections();
+    virtual ~InterfaceElections() override;
 
     void updateInterface();
 

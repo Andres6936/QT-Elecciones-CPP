@@ -41,7 +41,9 @@ public:
 
     PanelCandidate(QWidget *nParent, Candidate *nCandidate);
 
-    virtual ~PanelCandidate();
+    virtual ~PanelCandidate() override;
+
+    void updateLabel();
 
 private slots:
 

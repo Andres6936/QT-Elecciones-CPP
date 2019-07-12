@@ -5,10 +5,14 @@
 #include <QLabel>
 #include <QVBoxLayout>
 
+#include "Urn.h"
+
 class PanelUrn : public QFrame
 {
 
 private:
+
+    Urn *urn;
 
     QVBoxLayout *layout;
 
@@ -18,7 +22,9 @@ private:
 
 public:
 
-    PanelUrn(QWidget *parent);
+    PanelUrn(QWidget *parent, Urn *nUrn);
+
+    void updateLabel();
 };
 
 #endif // PANELURN_HPP

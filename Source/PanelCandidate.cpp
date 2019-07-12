@@ -71,6 +71,12 @@ PanelCandidate::~PanelCandidate()
 
 }
 
+void PanelCandidate::updateLabel()
+{
+    labelCostoCampanha->setText("Cost Campaign: " + QString::number(candidate->getCostoCampanha()));
+    labelNumeroVotos->setText("Votes: " + QString::number(candidate->getVotos()));
+}
+
 void PanelCandidate::handleButtonPressed()
 {
     // What is the button pressed?
