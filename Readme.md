@@ -22,3 +22,6 @@ of votes, (5) the percentage of votes obtained by each candidate, and (6) the av
 Cupi2 elections.
 
 # Interface
+
+
+![Interface](/Docs/Interface.png)
