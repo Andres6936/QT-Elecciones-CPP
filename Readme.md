@@ -1,4 +1,4 @@
-# Enunciated
+# Enunciate
 
 Elections for Cupi2's presidency are being held. For such position three candidates have been nominated, the
 which have carried out an intense advertising campaign using the main communication media

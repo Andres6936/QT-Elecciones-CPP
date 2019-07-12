@@ -94,12 +94,13 @@ InterfaceElections::InterfaceElections(QWidget *parent) : QMainWindow(parent)
 
 InterfaceElections::~InterfaceElections()
 {
-
+    delete urn;
 }
 
 void InterfaceElections::updateInterface()
 {
-    panelFrank->updateLabel();
+    //This code produce Segmentation Fault, [without solution]
+    //panelFrank->updateLabel();
 }
 
 void InterfaceElections::addVoteToCandidate(Candidate *candidate)
